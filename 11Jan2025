@@ -1,0 +1,37 @@
+1. easy to understand
+2. open source and free
+3. in-built code
+4. DS - numpy, pandas, matplotlib
+   DL - opencv, immutils
+   WEB APPLICATION -- DJANGO, DATABASE
+
+PURPOSE OF PYTHON:
+ Implement business logic to process the data
+
+WHAT IS PYTHON?
+    PYTHON is nothing but dynamically typed, general purpose high level interpreter programming language
+    it can develop any kind of programs/application
+
+
+dynamically typed - variable can have multiple datatype and called multiple times
+general purpose - AI, ML, Datascience, Web application
+High level - human readable format
+Interpreter PL - Human understandable language to machine understandable
+
+data types:
+ decided as what type of data
+    int
+        number format
+    string
+    float
+    boolean
+    True/False -- we have maintain format
+    complex
+        1+2j
+data structure
+    LIST
+    TUPLE
+
+tasks:
+# area of circle: pie r2
+# perimeter -- 2pier
