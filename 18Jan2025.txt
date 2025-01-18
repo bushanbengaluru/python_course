@@ -1,0 +1,85 @@
+Operators: operators are used to perform some operation
+values and variables
+
+7 types of operators: 
+    1. arithematic operators
+        +, - , *, / , // , %, **
+        Task: arithematic operator dynamically
+    2. assignment operators
+        Used to assign a values in particular variable
+        +=,-=,*=,//=,%=
+        a+=2 -> a=a+2
+    3. Logical operators
+        used to combine the conditional statements
+            and, or, not
+        these logical op are used in if, while and for loops
+        : is intendation
+        if a>0: # Decision making - check the condition, the condition is true or false
+            print('positive')
+        else:
+            print('negative')
+        ex2: check if even or odd 
+            if a%2==0:
+                print('even no')
+        we can combine 2 logical operators while decision making
+            if a>0 or a%2==0:
+                print('positive and even')
+            else:
+                print('negative and odd')
+    4. membership operators
+        used to test the sequence of the values
+            in, not in  - membership operator
+            a=['lenovo','dell','hp']
+            product = input('Enter a product')
+            if product in a: # not in for reverse strategy
+                print('product in the list')
+            else:
+                print('product not in list')
+
+    5. identity operators
+            used to compare the object of values
+            is, is not
+            ex:
+                a=10
+                b=20
+            #input 2 numbers, the numbers are same or not
+                a=int(input('Enter a: '))
+                b=int(input('Enter b: '))
+                if a is b:
+                    print('both are same')
+                else:
+                    print('both are not same')
+
+    6. comparision operators
+        > < == <= >=
+    7. Bitwise operators
+        used to compare(covert to binary) the numbers
+            & | ^(ZOR) << >>
+            ex: 10 & 15 (binary value of 10 is 1010 and 15 is 1111 )
+            0 is False
+            1 is True
+            fxT = False
+            True X True
+            (1010 x 1111 = 1010)
+            1010 | 1111 = 1111
+            10 | 15 = 15
+            ^ = reverse the bit value of a digit
+            when applying for 2 values we use the zor for true and false in reverse order
+             covert to numberical using bit 
+            1010(^)1111 = 0 x 2**3 + 1 x 2**2 + 0 x 2**1 + 1 x 2**0 # ( 2**1 = 1)
+
+            << backward
+            >> forward
+             64 bit - 10numerical  = 00000000000000000000000000000 1010 -> 64
+                << 10 = 000000001 0100 
+                10<<1 = 20 (1 step) - numberical value will get increase
+                10>>2 = 3 (2 step) - decrease the value
+             32 bit - 
+            0 - false
+            1 - true
+            in zor
+            0 - true
+            1 - false
+
+Next class: Loop
+    
