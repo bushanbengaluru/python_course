@@ -1,0 +1,95 @@
+Loop: used to execute the statement or condition multiple times.
+    while loop and for loop
+
+while loop:
+    a = 1
+    while a<=10: # while condition is False, the loop will exist
+        print('rama')
+        a+=1
+
+    while a<=10: # print even numbers
+        while  
+TASK:    print 
+    1
+    22
+    333
+    4444
+    55555
+
+TASK:    print
+         *
+        **
+       ***
+      ****
+    ******
+For loop:
+
+print prime number:
+a = input('Enter prime number)
+d=1
+cnt=0
+while 
+
+#give the  number, find factorial of number
+a = int(input('Enter a number: '))
+f=1
+while a>0: #TRUE
+    f=f*a #f=1*5
+    a=a-1 #a=4
+    print(f)
+
+print math table
+
+use of break
+break is condion to come out of loop
+a=1
+while a<=10:
+    print('rama')
+    if a==5:
+        break
+#game dice = 6
+#two dice = 6
+#total = 12
+#12 - you won the game
+#8 --- you can play - choice
+# you lost the game
+
+random module
+import random
+
+Question:
+print febonacci number 10
+a=0
+b=1
+print(a,b)
+x=1
+while x<=8:
+    c=a+b
+    print(c)
+    a=b
+    b=c
+    x+1
+TASK: give number and check if part of febbonacci number
+
+you have to give the number, check if its a perfect number
+perfect number:
+a=int(input('Enter a no: '))
+d=1
+s=0
+while d<a: #less than to exclude number itself
+    if a%d==0:
+        s=s+d
+    d=d+1
+if a==s:
+    print('perfect)
+TASK: - find perfect number between 1 to 1000 
+
+#you have to print sum of given number
+#123 -- 1+2+3=6
+a=int(input('Enter a no: '))
+s=0
+while a>0:
+    t=a%10
+    s=s+t #s=0+3
+    a=a//10 #a=123//10 -- 12 # floor division - remaining
+print(s)
