@@ -15,6 +15,8 @@ while True:
     elif total == 8:
         print("You can play - choice")
     else:    
+        print("Dice 1: ", dice1)
+        print("Dice 2: ", dice2)
         print("Dice values are: ", total)
         print("You lost the game")
         break
