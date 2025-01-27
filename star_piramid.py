@@ -4,8 +4,8 @@
 * * * * * """
 num = 0
 b=' '
-bnum = 7
-while num < 7:
+bnum = 9
+while num < 9:
     if num%2!=0:
         pattern = (b+("*"))*num
         print(b*bnum, pattern)
