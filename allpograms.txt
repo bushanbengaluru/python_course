@@ -1,0 +1,102 @@
+x = int(input("Enter a number: "))
+a = 0
+b = 1
+y = 1
+xlist = []
+for i in range(1,x+1):
+c=a+b
+xlist.append(c)
+a=b
+b=c
+if x in xlist:
+print(x, "is a Fibonacci number")
+else:
+print(x, "is not a Fibonacci number")
+
+#program to find perfect number
+for num in range(1, 1000): #
+sum=0
+for newnum in range(1, num):
+if num%newnum==0:
+sum=sum+newnum
+if sum == num:
+print(sum)
+
+#Program to printstar
+"""
+*
+**
+
+"""
+c= int(input("Enter number of stars: "))
+for a in range(1, c+1):
+print (' '(c-a)+''*(a))
+
+#Print number piramid repeated numbers
+"""pattern
+1
+22
+333
+4444
+55555
+"""
+
+for a in range(1,6):
+print(str(a) * a)
+
+#Program to print star in christmas tree fashion
+"""
+*
+* *
+* * *
+* * * *
+
+   *
+"""
+b=' '
+bnum = int(input("Enter number to print piramid: "))
+for num in range(1, bnum+1):
+if num%2!=0:
+pattern = (b+(""))num
+print(bbnum+pattern)
+else:
+pattern = (b+(""))num
+print(bbnum+pattern)
+bnum-=1
+print(b*(num+1)+"*")
+
+program to find fibonacci number
+
+x = int(input("Enter a number: "))
+a = 0
+b = 1
+y = 1
+xlist = []
+for i in range(1,x+1):
+c=a+b
+xlist.append(c)
+a=b
+b=c
+if x in xlist:
+print(x, "is a Fibonacci number")
+else:
+print(x, "is not a Fibonacci number")
+
+#Program to print maths table
+a = int(input("Enter a number: "))
+x = 1
+for x in range(1, 10):
+print(a, "x", x, "=", a*x)
+
+#Program to print incremental number in ascending order
+""" print number pattern
+1
+1 2
+1 2 3 4
+1 2 3 4 5
+"""
+for num in range(2,7): #less than 8 to exclude number itself
+for div in range(1,num):
+print(div, end=" ")
+print()
+num = num + 1
