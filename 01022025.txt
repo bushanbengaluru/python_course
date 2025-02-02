@@ -1,0 +1,108 @@
+**Task4: DONE
+Take list of elements
+ shuffling the elements
+ 
+ import random
+ a= [1,2,3,4]
+ out=[]
+ idnexes=[]
+ for _ in range(0,100):
+    idx=random.randint(0, len(a-1))
+    if idx not in indexes:
+        out.append(A[idx])
+        indexes.append(idx)
+    if len(a)==len(out):
+        break
+print(out)
+print(indexes)
+=========
+CLEAR
+clear () - function, which is used to clean the element in the list
+a=[1,2,3,4,5]
+a.clear()
+print(a)
+===
+remove - remove particular element
+delete - based on index position to delete
+clear - clear everthing in list
+a.remove(1) # element
+del(a[3]) # index position element will be deleted
+=======
+sort()
+a=[1,5,3,2,6,7,53,11]
+a.sort() # ascending order
+**it will also work on int and chars also
+descending order - reverse
+a.sort(reverse=True)
+=========
+PROJECT:
+Multiple operations in the list
+1. empty list
+2. add the element
+3. delete the element
+4. display
+5. exit
+---------
+print('FRUIT MANAGEMENT')
+bucket=[]
+while True:
+    print('1. Add fruit')
+    print('2. remove fruit')
+    print('3. display fruit')
+    print('4. exit fruit')
+===========
+SUB List
+ - list inside another list
+ nested list
+ a=[[1,2], [3,4]]
+ a[0].append(10)
+ TASK4 - practice sublit
+ a=[[1,2,3], ['rama','sita'], [0.0,0.2]]
+sum(a)
+b=sum(a[])
+print(b)
+it will remove all sublist and added as 
+=======
+Question
+#you can find sub part of the list using slicing
+slicing? - find the sub part of list
+ - how to find sub part using slicing?
+a = [1,2,3,4,5,'rama','sita']
+print(a[indexposition:elementposition]) #
+print(a[0:6]) # o to 6th element position
+print(a[0:])# rest of the elements
+#ML - Train data / test data
+print(a[-1]) # right to left / last element
+print(a[-4:-1]) # last position is excluded
+print(a[-4:]) # from -4 to end
+print(a[1::2]) # from 1index position and take 3rd element, counted from the 1st first position
+============
+FIND RIGHT ELEMENT OF THE List - 
+a=[10,20,30,40,50,60]
+#check if 30 exists
+#read the element right rotation, until circle back to same element
+x=int(input('Enter a no: '))
+if x in a:
+    out = []
+    idx=a.index(x)
+    out.extend(a[idx+1:])
+    out.extend(a[:idx+1])
+    print(out)
+else:
+    print('element not there in the list')
+
+print(a[::-1])
+
+TASK: left rotation
+========
+QUESTION: find pallandrom
+s=input("Enter a word: ")
+rev=s[::-1]
+if rev == s:
+    print("its a pallandrom")
+else:
+    print("not a pallandrom")
+==================
+
+
+

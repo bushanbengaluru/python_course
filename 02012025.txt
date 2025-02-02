@@ -1,0 +1,77 @@
+you have to find based on element key word in the list
+--[in and not in]
+we hve to you use membership operator
+'not in' operator
+--[unpacking]
+we can store the list of values in individual variable
+x=[1,2,3,4]
+#b=1, c=2, d=3, e=4
+a,b,c,d=x
+--[standard expression]
+give the variable and get the remaining values
+    a=[1,2,3,4,5]
+    x,*y,z=a
+    print('x=', x, 'y=',y, 'z=', z)
+    x=1, y=[2,3,4], z=5
+--[any and all]#used in ML and AI
+#Any - based on list of element 0th element or non 0th element
+the list value is true
+    a=[1,2,3,4]
+    b=any(a)
+    print(b) - true
+    a=[0,1,2,3,4] #0th value included
+    b=any(a)
+    print(b) - true
+
+#All - 
+    a=[0,1,2,3,4]
+    b=all(a)
+    False
+**Task 1:
+    elements
+    a=[1,2,3,4,5]
+    b=[3,4,5,6,7]
+    #intersection
+    #union
+
+--List comprehensive - writing code shortway
+#print 1 to 10 value, by using list comprehensive
+    out=[i for i in range(1, 11)]
+    print(out)
+    out=[i for i in range(1, 11) if i%2==0] #for element
+    print(out)
+--Replace element
+    a=[1,2,3,4,5]
+    a[1]=30
+[20,2,3,4,5]
+*TASK2 - change this to for loops
+#using while
+    i=0
+    while i < len(a):
+        if a[i]==2:
+            a[i]=30
+        i+=1
+    print(a)
+--[Inventory program]
+#veg - brinjal
+#qty - 2kgs
+#price -
+#end of the day - 8pm - remaining
+#total amount collected
+idx=veg.index(item)
+for item in zip(veg,qty):# zip can iterate multiple list
+    print(item)
+**TASK3 - same logic based on products
+--
+join the 2 lists
+a=[1,2,3,4]
+b=[5,6,7,8]
+a.extend(b)
+print(a)
+====
+shallow copy - we can assign one list too another variable and both list addresses are same
+deep copy - we can assign one list tp another list and both list addresses are different
+how to add one list to another list -- by using extend() --function
+=================
+
+
