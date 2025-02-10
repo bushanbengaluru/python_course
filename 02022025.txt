@@ -65,7 +65,7 @@ it will remove all sublist and added as
 =======
 Question
 #you can find sub part of the list using slicing
-slicing? - find the sub part of list
+slicing? - ***find the sub part of list***
  - how to find sub part using slicing?
 a = [1,2,3,4,5,'rama','sita']
 print(a[indexposition:elementposition]) #

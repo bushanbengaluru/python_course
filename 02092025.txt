@@ -1,0 +1,111 @@
+SET
+shallow copy and deep copy
+s = {10,20,'rama'}
+s1=s
+print(s)
+print(s1)
+====
+DEEP copy
+We have function -- update(), we can update one set element to another set
+s = {10,20,'rama'}
+s1=set() # explicitly we have to mention
+s1=s.update()
+print(s)
+print(s1)
+print(id(s))
+print(id(s1))
+=========
+frozenset() - one of the set, we can store hetrogenius values, not allows the duplicate value, but also un ordered
+but, frozenset is immutable
+s=frozenset([10,20,'rama,'sita])
+print(s)
+========
+comprehensive usage of SET
+out = {i for i in range(1,11) if i%2==0}
+print(out)
+====================
+#update function acting as union
+s={10,'rama', True}
+s1={20, 'sita',1}
+s.update(s1)
+print(s)
+10 rama sita 20 True
+#intersection
+s={10,'rama', True}
+s1={20, 'sita',1}
+s1.intersection_update(s1) # we get common value in set, which exist
+print(s)
+#difference update
+s={10,'rama', True}
+s1={20, 'sita',1}
+s1.difference_update(s1)#common value as s-s1, it removes the common value from source, example s element what ever we have common in s1 will be removed
+print(S)
+10, 'rama'
+s={10, 'rama', True}
+s1={20, 'sita',1}
+s1.symmentric_difference_update(s1)
+========
+#interview question - newspapers
+telugu={"p1", "p2", "p3"}
+english={"p4", "p3", "p5"}
+1. who are the people reading everyday, one paper = symmentric_difference_update
+2. only reading the telugu news paper - difference_update
+3.both news papaer - intersection
+4.reading atleast one newspapers - union
+============
+#symbol of union, intersection, difference, symmentric_difference_update
+    s={10,20, 'rama', True}
+    s1={30,'hanuma'}
+    out=s|s1 #union symbol
+    print('union', out)
+
+    s={10,20, 'rama', True}
+    s1={30,'hanuma'}
+    out=s&s1 #intersection symbol
+    print('intersection', out)
+
+    s={10,20, 'rama', True}
+    s1={30,'hanuma'}
+    out=s-s1 #difference symbol
+    print('difference', out)
+    
+    s={10,20, 'rama', True}
+    s1={30,'hanuma'}
+    out=s^s1 #symmentric_difference_update  symbol
+    print('symmentric_difference_update', out)
+
+#subset() -- one set element to another set
+s1={1,2,3}
+s2={1,2,3,4,5}
+res = s1.issubset(s2) # it will only check if its exist or not, answer will be true or False
+print(res) - True
+s1={10,20}
+s2={1,2,3,4,5}
+res = s1.issubset(s2)
+==============
+#issuperset() # checks if subset element exist or not in superset
+s1={1,2,3,4}
+s2={1,2,3,4,5}
+out=s2.issuperset(s1) # True
+==============
+#isdisjoint() - we dont want the matching element in both set
+s1={1,2,3}
+s2={4,5,6}
+out=s1.isdisjoint(s2)
+=================
+#isdiscard()
+
+s={10,20,'rama'}
+s.remove(10)
+print(s) # 20
+
+
+s={10,20,'rama'}
+s.remove('ram')
+it will give key error
+
+s={10,20,'rama'}
+s.discard('ram') # here we dont get error, it did not remove the element
+print(s)
+=======================
+
