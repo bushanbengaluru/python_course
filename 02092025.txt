@@ -107,5 +107,6 @@ it will give key error
 s={10,20,'rama'}
 s.discard('ram') # here we dont get error, it did not remove the element
 print(s)
-=======================
+===========================
+****
 
