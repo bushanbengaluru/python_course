@@ -1,0 +1,114 @@
+q1.
+q2.
+q3 = get unique combination of two list
+a = [1,2,3]
+b = ['a','b']
+c = []
+for i in a:
+    for j in b:
+        c.append((i, j))
+print(c)
+#q4 - print permitation combination of given list
+
+method2 - using iteration tool
+from itertools import permutations
+a = [1, 2, 3]
+
+for i in permutations(a,3): # where 3 is number of digits  == number of elements in a
+    print(i)
+==============================
+# DICTIONARY IS DATASTRUCTURE WE CAN STORE KEY VALUE PAIRS
+# KEY SHOULD BE UNIQUE AND VALUE CAN BE DUPLICATE, DICTIONARY IS MUTABLE(WE CAN MODIFY) DATASTRUCTURE
+#ITS A ORDERED DICTIONARY
+# we have setdefault() - key pair value in dictionary
+# example: name, ratings, salary are keys, 
+a = {'name':'rama', 'age':30}
+# a['gender']='M' - method1
+# a.setdefault('gender', 'M')
+print(a)
+======
+use .get
+d=['name':'rama', 'age': 30]
+res=d.get('name', 0)
+print(res)
+res=d.get('age', 1)
+print(res)
+========
+update() function, we can add 1 dictionary to another empty dictionary
+d=['name':'rama', 'age': 30]
+d1={}
+d1.update(d)
+print(id(d))
+print(id(d1))
+=========
+read the data using for loop
+only key and only value 
+d = ['name':'rama', 'age': 30, 'gender':'M']
+for v in d.values():
+    print(v)
+for u in d.keys():
+    print(u)
+for i in d.keys():
+    print(i, d[i])
+d.items() - this will print 
+====
+** TASK.1 - FIND HIGHEST MATHS MARKS OF A PERSON
+marks = {'rama' : {'cs': 45, 'maths' : 70},
+         'sita' : {'cs': 50, 'maths' : 64},
+         'john' : {'cs':40, 'maths' : 50}
+        }
+x={'rama','sita','hanuma'}
+# output={'R' : 'rama'}
+out={s[0].upper() : s for s in x}
+print(out)
+
+Task: print 1:1, 2:2 ...until 10:10
+a={s:s for s in range(1,11)}
+print(a)
+======
+task: dictionary 1,11 , even number 2**2, odd number 3**3
+x={s:s**2 if s%2==0 else s**3 for s in range(1,11)}
+print(x)
+==============================================
+STRING - IS GROUP OF CHARECTERS ENCLOSED BY SINGLE QUOTE OR DOUBLE QUOTE, STRING IS immutable, ORDERED DATA, SO WE CAN USE 
+s = 'we are good'
+print(s[0]) # w
+print(s[0:4]) # we a
+---
+s='john in usa'
+print(s[-1:-4:-1]) # negative
+#asu
+----
+covert small letter to upper
+s = 'we are good'
+out=s.upper()
+print(s)
+===
+write same without using upper()
+ord(a) - we will get ascii 
+chr(65) - A
+**** TASK2 - a-z = ascii value for A-Z=ascii values
+===========
+q1
+s='we are good'
+#function capitalize() --- first char of word to upper()
+#covert string to words
+#split function - used to convert string to words
+out=s.split
+print(out)
+#covert words to string using join()
+s=['we 'are', 'good']
+out=' '.join(s)
+words = out.capitalize()
+print(out)
+==========
+comprehensive way
+s = 'we are good'
+out = ' '.join[word.capitalize() for word in s.split()] # 
+# We Are good
+print(out)
+***TASK3 == Find the string pallandrom - comprehensive way
+s = ['madam','malayalam','teacher']
+    1. given value is pallandrom are not
+    2. print only pallandrom value in a list
+How many pallandrom in the list?
