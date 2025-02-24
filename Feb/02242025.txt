@@ -1,0 +1,104 @@
+#delimiter: example : we|are|good| -- 'we','are','good'
+s='we|are|good'
+s1=s.split('|')
+print(s1)
+
+**Task1 - convert 'we|are|good' to 'we','are','good' without using split
+#isdigit() function - find digit value in string
+s='a2b3c2'
+out=''
+for i in range(0, len(s)):
+    if s[i].isdigit()==True:
+        out=out+s[i-1]*int(s[i])
+print(out) -- aabbbcc
+=============================
+#format() -- fill the blank
+name = input('Enter a name: ')
+age = int(input('Enter age: '))
+marks=int(input('Enter marks: '))
+s=''' my name is {} and age {}'''.format(name, age, marks)
+print(s)
+
+==============================
+=========FUNCTIONS===========
+what is function? - reusable code
+def f1():
+    print('learn python')
+    print('learn mysql')
+def f2():
+    print('learn django')
+    print('learn python')
+f1()
+f2()
+=======
+def add(a,b): #positional parameter
+    c=a+b
+    return c
+res=add(10,20)
+print(res)
+========
+parameters, 2 types
+# dynamic - we are giving value in place of argument, then
+# positional parameter - we should match parameter and 2 arguments
+def add(a,b=20): #dynamic
+    c=a+b
+    return c
+res=add(10,20)
+print(res)
+===============
+#list of arguments(*args)
+def add(*args): #input more than two fucntional overloading
+    print(sum(args))
+add(10,20,30,40,50) 
+=============
+def add(*args): #input more than two fucntional overloading
+    print(sum(args))
+add(10,20,30,40,50,'rama','sita') #heteroginus data
+def add(*args):
+    total=0
+    out=''
+    for i in args:
+        if type(i)==int:
+            total=total+i
+        if type(i)==str:
+            out=out+i
+    return total, out
+
+    res=add(10,20,30,40,50,'rama','sita')
+    print(reusable) -- (150, 'rama sita')
+============
+Key word arguments:# call key value pairs
+
+def info(name, age):
+    s='''my name is {} and age {}'''.format(name)
+    return s
+res=info('rama', 30)
+print(res)
+======
+def display(**kwargs): # returns key value pairs
+    print(kwargs)
+display(name='rama', age=30)
+{'name': 'rama', 'age': 30}
+==========
+multiple types parameters, argument, keyword arguments
+def display(uname, pwd, *args, **kwargs):
+    print(unme)
+    print(pwd)
+display('rama','rama@123',10,20,30,40,'rama', name='sita', age=30)
+multiple types automatically read by function
+==============
+GENERATOR
+#generator is spl function, which is used to yeild keyword return the value
+#yeild key word,  - it will return value by value in calling area
+
+#example: print even number
+def even(start,end):
+    for i in range(start, end+1):
+        if i%2==0:
+            yeild i # works like return
+
+for res in even(1,10):
+    print(res)
+**TASK1 - by using function, find given prime numbers
+**TASK2 - by using function, find given is a prime numbers or not
+

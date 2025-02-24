@@ -1,0 +1,5 @@
+name = input('Enter a name: ')
+age = int(input('Enter age: '))
+marks=int(input('Enter marks: '))
+s=''' my name is {}, age is {} and marks is {}'''.format(name, age, marks)
+print(s)

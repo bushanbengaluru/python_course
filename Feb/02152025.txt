@@ -35,7 +35,7 @@ res=d.get('age', 1)
 print(res)
 ========
 update() function, we can add 1 dictionary to another empty dictionary
-d=['name':'rama', 'age': 30]
+d={}'name':'rama', 'age': 30}
 d1={}
 d1.update(d)
 print(id(d))
