@@ -1,0 +1,94 @@
+Nested function:
+def outerFun():
+    print('outerfun')
+    def innerFun():
+        print('innerFun')
+    innerFun()
+outerFun()
+===========
+def outerFun():
+    x=10 #local variable / global variable
+    print('outerFun')
+    def innerFun():
+        print(x)
+        print('innerFun')
+    return innerFun # () is not there, only memory is returned
+f=outerFun()
+closure: remembering of local variable outside of the function.
+f()-- f is acting like innerFun #output - 10, innerFun, # called function way
+---------------
+Decorators:
+=========
+what is decorators?
+wrapper script will be wrapped around a function to another function
+example:
+implemented a web application
+1. Bill application
+    product - sum of price 
+        requirement to add 5% discount code
+    --discount code
+     - adding new feature
+- main logic will be same - add another fucntion
+and connect to main function
+
+======
+while writing decorator, we have to call input function.
+def decFun(f): #main logic
+    def innerFun():
+        print('*'*10)
+        f()
+        print('*'*10)
+    return innerFun
+@decFun #
+def display():
+    print('we are good')
+display()
+==========
+example 2: 
+def decFun(f):
+    def innerFun(x,y):
+        if x<y:
+            out=f(y, x)
+        else:
+            out=f(x,y)
+        return out
+    return innerFun
+@decFun
+def divi(a,b):
+    c=a//b
+    return c
+res=divi(10,2) $ output will be 5, 
+print(res)
+***-TASK1 - can you find prime numbers using Decorators
+======================
+RECURSIVE FUNCTIONS - fuction calling itself
+
+def display():
+    print('rama')
+    display()
+display()
+===it will iterate the function for upto 1020 times and then it will give error, max recursive 
+depth function error
+=============================
+iterators: take next value
+a=[1,2,3,'rama']
+it=iter(a) # it will call element
+print(it)
+print(next(it)) - this will print next value
+=======
+enumerate function: its binding index position and value
+x=[1,2,3,4,5]
+for idx,val in enumerate(x): #binding index and value
+    print(idx,value)
+** factorial of the number - 5*5
+================
+def factoria(num):
+    if num == 1:
+        return 1
+    return num*factorial(num-1)
+factorial(5)
+=====================
+LAMBDA 
+
+---
+classes
