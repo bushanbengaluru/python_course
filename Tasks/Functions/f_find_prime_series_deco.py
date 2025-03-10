@@ -31,5 +31,3 @@ def find_isprime(check_num):
 print("Program to find if given number is prime number")
 check_num = int(input("Enter number: "))
 find_isprime()
-
-# res = find_isprime(check_num)
