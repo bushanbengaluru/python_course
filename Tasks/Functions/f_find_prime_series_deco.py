@@ -13,14 +13,14 @@ def finding_series(func):
     return inner_series
 
 
-def decorator_func(func):
-    def inner_func():
+def print_func(func):
+    def print_inner_func():
         res = func(check_num)
         print(res)
-    return inner_func
+    return print_inner_func
 
 @finding_series
-@decorator_func
+@print_func
 def find_isprime(check_num):
         for i in range(2, check_num):
             if check_num % i == 0:
