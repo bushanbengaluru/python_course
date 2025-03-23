@@ -2,7 +2,7 @@ class Bank:
     def __init__(self, name, acc_no, amount):
         self.__name = name
         self.__acc_no = acc_no
-        self.amount = amount
+        self.__amount = amount
     def info(self):
         return self.__name, self.__acc_no, self.amount
 
