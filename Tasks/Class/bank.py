@@ -12,7 +12,7 @@ amount = int(input("Enter amount: "))
 b = Bank(name, acc_no, amount)
 res = b.info()
 print("{} has account number {} and amount is {}".format(res[0], res[1], res[2]))
-# Output:
-b.name="Ramesh"
+# Private access modifier:
+b.name="Ramesh" #Trying to modify name
 res=b.info()
 print("{} has account number {} and amount is {}".format(res[0], res[1], res[2]))
