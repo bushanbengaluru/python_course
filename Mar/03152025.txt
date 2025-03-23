@@ -1,0 +1,37 @@
+#what is lambda function?
+its a Anonymous function, based on lambda function, we can create small functionality?
+use of lambda functions: ex implement any applications, 100s of lines code
+you have to execute the program if it takes time for 1hr,
+we need small function to execute within certain 
+
+sq = lambda num:num**2
+res = sq(10)
+
+positional parameter
+default parameter (if we assign value )
+sum = lambda num a,b:a+b
+res = sum(10,20)
+print(res)
+
+list of args also possible
+
+add=lambda *args:
+============
+#map,filter,reduce,sorted
+map function - map not given direct value
+x = [1,2,3,4]
+res=map(lambda a:a**2,x) #map acting like for loop
+print(list(res))
+filter - based on condition, it will match
+x=[1,2,3,4,5,6]
+out=filter(lambda a:a%2==0,x)
+print(list(out))
+
+reduce function - you have to take the recursive or the value concorrently
+add the two argument values, concurrently
+from functools import reduce
+x=[1,2,3,4,5,6]
+res=reduce(lambda a,b:a+b,x)
+print(res)
+
+============
