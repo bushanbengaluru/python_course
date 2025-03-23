@@ -1,0 +1,53 @@
+Method overloading - changing the behaviuor of base class method to child class
+class A:
+    def __init__(self):
+        print('class A init')
+    def display(self):
+        print('class A display')
+class B(A):
+    def __init__(self):
+        print('class B init')
+    def display(self):
+        print('class B display')
+        super().display() # Super method create temporary object for 
+        #() is argument
+b = B()
+b.display()
+==========================
+Multi-Level inheritence
+You have to inherit mutliple one child class with multiple super class
+Class Human():
+Class employee():
+Class Manager():
+========
+Multiple inheritence
+MRO method
+multiple one child class two diff super class
+class A:
+    def display(self):
+        print('display A class')
+class B:
+    def display(self):
+        print('display B class')
+    def display(self):
+        print('display B class')
+class C(A,B): #java ambiduty problem, first we have inherited A, so it will display A
+    pass
+MRO - method will take care, which one first inheritted, it will print that class method
+c=C()
+c.display()
+c.show()
+order=C.mro() - to check MRO method
+print(order)
+==================================
+TASK1 - Read - C3 linearization algorithm - documentation
+calling multiple inheritence
+===========
+TASK2
+Class cal1 - a.b add(), sub()
+class cal2 - x,y multiple (), div()
+class cal3(cal1, cal3)
+c=cal3(10,20)
+c.add()
+c.multi()
+=================
