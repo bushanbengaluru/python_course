@@ -10,6 +10,6 @@ class Ratings:
             return ("*" * self.avg_rating)
         else:
             return ("*****")
-r = Ratings(8,4)
+r = Ratings(20,4)
 avg_rating = r.avg_rating()
 print(avg_rating)
