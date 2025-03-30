@@ -1,0 +1,18 @@
+Hyrarchical
+A>B, C
+Class A:
+Class B(A):
+Class C:
+====================
+Hybrid:
+A-B, C-D
+Class A:
+ClassB(A):
+
+class c
+class D(C):
+======================
+Polymorphism
+is instance
+encapsulation
+====================== 
