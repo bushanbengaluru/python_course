@@ -1,3 +1,4 @@
+***TASK
 Hyrarchical
 A>B, C
 Class A:
@@ -16,3 +17,173 @@ Polymorphism
 is instance
 encapsulation
 ====================== 
+what is is_instance method?
+its nothing but, it will check the particular class object or not.
+====
+class A:
+    def display(self):
+        print('display from A class')
+a=A()
+a.display()
+res=isinstance(a,A)
+print(res)
+print(type(a))
+#True
+
+class B:
+    def display(self):
+        print('display B class')
+b=B()
+res=isinstance(a,B)
+print(res)
+#Flase
+================
+Polymorphism:
+Some code, different behaviuor different situation
+class Cat:
+    def sounds(self):
+        print('Meow Meow')
+class Dog:
+    def sounds(self):
+        print('Bow Bow')
+class Rat:
+    def sounds(self):
+        print('Keech Keech')
+c=Cat()
+d=Dog()
+r=Rat()
+list_obj=[c,d,r]
+
+import random
+random.shuffle(list_obj)
+for obj in list_obj:
+    obj.sounds()
+---
+Example - stock market
+===============================
+OPERATOR OVERLOADING
+#Operator overloading - giving to the extra behaviour of existing operator
+# function overloading - 
+# method overloadting - *args, **kwargs
+
+class Student:
+    def __init__(self,name,marks):
+        self.name = name
+        self.marks = marks
+    def display(self):
+        print(self.name, self.marks)
+    def __add__(self,other):
+        return self.marks+other
+s=Student('rama',30)
+s.info()
+--Requirement, we dont want name
+s=Student(30)
+s1=Student(40)
+print(s+s1)
+=====================
+encapsulation
+Wrapping up the data and methods into single unit 
+Example:
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.__age=age
+    def info(self):
+        print(self.name,self.__age) #private access modifier, encapsulation
+s=Student('rama', 30)
+s.age=25
+s.info()
+===============
+Monkey patching
+Adding some attributes in your class or objects dynamically in  your project
+class Student:
+    def __init__(self,name,age):
+        self.name=name
+        self.__age=age
+    def info(self):
+        print(self.name,self.__age)
+a=Student('rama',30)
+a.z=30 # this is not defined, but still it will consider 
+print(a.z) # calling another parameter, directly in print
+a.info()
+==================
+#Ducktype:
+same like Polymorphism
+list_obj=[c,d,r]
+random.shuffle(list_obj)
+for obj in list_obj:
+    obj.sounds() # we dont know which method is called, this is ducktype / polymorphism
+==================
+#Abstraction:  hiding unnecessary information / object from outside the class
+
+class Calc:
+    def __init__(self,num):
+        self.num=num
+    def isPerfect(self):
+        pass
+save to file abst.py
+from abst import Calc:
+class NewCal(Calc):
+    def isPerfect(self):
+        s=0
+        d=1
+        while d<self.num:
+            if self.num%d==0:
+                s=s+D
+        if s==self.num:
+            return True
+        else:
+            return False
+export the file child.py
+
+create new file final_output.py
+from child import isPerfect:
+obj=NewCal(6)
+res=obj.isPerfect()
+print(res)
+
+** By using abstraction, given number is prime or not
+==========
+#message passing
+message passing means, pass one object to another class
+class A:
+    def __init__(self,x):
+        self.x=X
+    def info(self):
+        print(self.x)
+
+class B:
+    def process(self,other):
+        return other.x*10 #other is also acting like self
+a=A(10)
+a.info() #10
+b=B()
+res=b.process(a) #Here passing a class object inside b method
+==============
+*** calculate the EMI - write it in mesage passing method
+class Customer:
+    def __init__(self,name,p,t,r):
+        self.name=name
+        self.p=p
+        self.t=t
+        self.roi=R
+    def info(self):
+        print('self.name,self.p,self.t,self.roi')
+save the file in cust.py
+
+create new file emi.py 
+class EmiCalc:
+    def emi(self,obj):
+        amount=(obj.p*obj.t*obj.roi)//100 #Superclass parameter obj
+        return amount//obj.t
+
+save file emi.py
+create emicalc.py
+from cust import Customer
+from emi import EmiCalc
+c=Customer('rama',10000,12,10)
+c.info()
+c1=EmiCalc()
+res=c1.emi(c)
+print(res)
+=======================
