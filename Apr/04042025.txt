@@ -1,0 +1,24 @@
+Exception handling
+#1 syntactical error
+    errors while writing the code
+#2 logical/sematic
+    errors in the program logic
+#3 run time error
+    run time, you have to handle, incase write and runtime exceptons,
+    you have to handle
+
+ZerodivisionError:
+ValueError:
+User defined exceptions:
+    user can raise the exception
+if p<0 or t<0 r<0:
+    raise ValueError("negative values are not allowed")
+==========
+file handling
+#r - Read
+#w - write
+#a - append
+#remove function to delete
+
+f = open("path/hai.txt", "r")
+print(f.readline())

@@ -14,7 +14,7 @@ class c
 class D(C):
 ======================
 Polymorphism
-is instance
+isInstance
 encapsulation
 ====================== 
 what is is_instance method?

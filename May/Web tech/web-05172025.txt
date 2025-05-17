@@ -1,0 +1,41 @@
+html - hypertext markup language - client side program only
+    - some tags, example online social network
+    GUI for login
+    Username:
+    password:
+    login cancel
+    name=""
+    value=""
+**
+user registration form
+typeofsocial network:
+username:
+password:
+login cancel
+register
+firstname lastname
+gender
+phone
+address
+dob
+email
+username
+password
+type of social network <select>
+[register] [cancel]
+
+<table border = "1">
+<tr>
+<th>first name </th>
+
+
+css - Cascading style sheet
+
+<style>
+#title - # for id
+.title - . for type=
+font-size=10px,
+text-transform=capitalize
+
+javascript - 
+react - 
