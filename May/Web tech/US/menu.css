@@ -1,0 +1,20 @@
+.menu-bar{
+    text-align: center;
+    background-color: rgb(0,100,0);
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color : #fff;
+}
+.menu-bar ul li{
+    width: 120px;
+    padding: 15px;
+    margin: 0 5px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
