@@ -37,5 +37,12 @@ css - Cascading style sheet
 font-size=10px,
 text-transform=capitalize
 
+ul - underline
+ln - line
+
+pagination:
+&laequo <<
+&raquo >>
+
 javascript - 
 react - 

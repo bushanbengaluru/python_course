@@ -1,0 +1,23 @@
+JAVA SCRIPT
+check validation
+front end and back end
+
+
+console.log
+alert
+
+data types:
+number data type - assign the value for variable
+1. int a=827
+2. float a=0.982
+
+Object
+array - list of data
+dictionary - 
+
+Given number
+positive
+negative
+zero
+==========
+switch function
