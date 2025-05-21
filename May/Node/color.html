@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="ptag" > This is my js project. </p>
+            <select name="" id ="clr" onchange="changecolor();">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+            <script>
+                function changecolor(){
+                    let colr,ptag;
+                    colr=document.getElementById("clr").value;
+                    ptag=document.getElementById("ptag");
+                    ptag.style.color=colr;
+                }   
+            </script>
+    </body>
