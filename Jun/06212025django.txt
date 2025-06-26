@@ -1,0 +1,12 @@
+django is frame work to implement the web application
+1. create one folder
+2. create own project
+    go to terminal
+    django-admin startproject <project-name>
+3. run the project
+python manage.py runserver
+4. create subapp
+python manage.py startapp <app-name>
+5. add the app in settings.py under INSTALLED APP
+# django architecture
+client --->[webapp[firstapp[url[views[templates]]]]] - mvt - model view templates
