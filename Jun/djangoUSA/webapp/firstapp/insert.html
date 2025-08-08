@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="" method="post">
+            {% csrf_token %}
+        <h1>EMPLOYEE MANAGEMENT SYSTEM</h1>
+        <label for="">
+            Employee ID:
+            <input type="text" name="eid">
+        </label><br><br>
+        <label for="">
+            Employee Name:
+            <input type="text" name="ename">
+        </label><br><br>
+        <label for="">
+            Employee Salary:
+            <input type="text" name="esal">
+        </label><br><br>
+        <input type="submit" value="Submit">
+        <p>{{msg}}</p>
+        </form>
+    </body>
+
+</html>

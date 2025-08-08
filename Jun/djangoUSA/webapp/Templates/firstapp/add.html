@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <form action="" method="post">
+            {%csrf_token%}
+        <h1>Employee Management System</h1>
+        <label for="">
+            value1:
+            <input type="text" name="t1">
+        </label><br><br>
+        <label for="">
+            value2:
+        <input type="text" name="t2">
+    </label><br><br>
+    <input type="submit" value="Submit">
+    <p>{{result}}</p>
+    </form>
+    </body>
+</html>
